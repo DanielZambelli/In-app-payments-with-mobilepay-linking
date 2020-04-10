@@ -23,7 +23,7 @@ Linking.openURL(`mobilepay://send?phone=${9999}&amount=${1.00}&comment=${'Order 
 To know if the payment has been completed with the expected amount the [MobilePay Transaction API endpoint](https://github.com/MobilePayDev/MobilePay-TransactionReporting-API#transactions-endpoint) can be called. Once the payment has been completed a record with the comment "Order #999" will appear in the API after which the amount can be verified. If the record does not appear, lets say within a few minuttes it can be asummed that the user aborted the payment by closing the app, leaving the payment flow or in another way.
 
 
-```json
+```
 {
   ...
    "transactions": [
